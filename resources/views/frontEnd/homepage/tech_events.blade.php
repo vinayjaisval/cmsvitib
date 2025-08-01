@@ -17,7 +17,7 @@
     </div>
 </section>
 <section>
-    <div class="sip-title" id="sip-title">
+    <div class="sip-title mt-3" id="sip-title">
         <div class="container">
             <div class="sip-meet-person">
                 <div class="row">
@@ -33,4 +33,17 @@
         </div>
     </div>
 </section>
-
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper', {
+    slidesPerView: 4,   // show 4 images at a time
+    slidesPerGroup: 2,  // move 2 images when clicking next
+    spaceBetween: 20,   // space between images
+    loop: false,        // optional, set to true if you want infinite loop
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>

@@ -39,7 +39,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => trim(env("APP_URL"),"/").'/storage',
+            'key' => trim(env('SOME_ENV_VARIABLE') ?? ''),
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -47,7 +47,7 @@ return [
         'media' => [
             'driver' => 'local',
             'root' => public_path("../../uploads/media/"),
-            'url' => trim(env("APP_URL"),"/").'/uploads/media/',
+            'key' => trim(env('SOME_ENV_VARIABLE') ?? ''),
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -55,7 +55,7 @@ return [
         'topics' => [
             'driver' => 'local',
             'root' => public_path("../../uploads/topics/"),
-            'url' => trim(env("APP_URL"),"/").'/uploads/topics/',
+            'key' => trim(env('SOME_ENV_VARIABLE') ?? ''),
             'visibility' => 'public',
             'throw' => false,
         ],

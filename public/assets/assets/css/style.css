@@ -9,6 +9,10 @@
 body{
     overflow-x: hidden;
 }
+.video-section img{
+    width:100%;
+    height:auto;
+}
 
 .plus-btn a{
     color:#1D4364;
@@ -53,7 +57,7 @@ body{
 }
 
 .navbar-container {
-    max-width: 90%;
+    /* max-width: 90%; */
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -66,8 +70,8 @@ body{
 }
 
 .nav-link {
-   color: #1A3662 !important;
-    font-weight: 500 !important;
+   /* color: #1A3662 !important;
+    font-weight: 500 !important; */
     margin: 0 6px !important;
     transition: color 0.3s ease !important;
 }
@@ -85,7 +89,7 @@ body{
 
 .navbar-nav .register-btn {
     background: #0E404C;
-    color: white;
+    color: white !important;
     padding: 8px 25px;
     border-radius: 5px;
     text-decoration: none;
@@ -243,7 +247,7 @@ body{
 }
 .communicatioin-title p{
     margin-bottom: 0px;
-    /* background: #1B4962; */
+    background: #1B4962;
     padding: 2px;
 }
 .communicatioin-title h3{
@@ -364,6 +368,10 @@ body{
 }
 
 @media (max-width: 991px) {
+     .popup-content{
+    overflow-y: scroll;
+    height: 300px;
+    }
     .navbar-collapse {
         background: linear-gradient(to right, #FEECDC, #F3F4F6);
         padding: 15px;
@@ -664,7 +672,7 @@ body{
 }
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 9%);
+    top: var(--swiper-navigation-top-offset, 9%) !important;
 }
 .maitriz-title h1{
     font-size:37px;
@@ -742,14 +750,17 @@ body{
 }
 
 .services-card {
+   
     background: #fff;
-    padding: 40px 38px;
+    /* padding: 40px 38px; */
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     position: relative;
-    width: 200px;
+    width: 100%;
+    height: 180px;
+
 }
 .vitib-vh .services-card {
    background: #fff;
@@ -1090,9 +1101,9 @@ body{
 .event-group{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.sip-company-aloocated{
+/* .sip-company-aloocated{
     margin-top: 40px;
-}
+} */
 .blur-blog{
     background: linear-gradient(121.94deg, #1C4062 3.3%, #3283A0 77.96%);
 
@@ -1426,8 +1437,9 @@ body{
  }
  .explotion-speech {
     border-radius: 0px 0px 15px 15px;
-    height:200px;
- }
+    height: 330px;
+}
+ 
 
  /*.explotion-title  h2{*/
  /*   color: #fff;*/
@@ -3217,9 +3229,9 @@ body{
     .form-action .form-mtehod{
         width:100%;
     }
-    .count-wrap{
+    /* .count-wrap{
         flex-direction:column;
-    }
+    } */
      .counter-title {
     width: inherit !important;
     }
@@ -3237,22 +3249,22 @@ body{
        top:auto !important;
   
 }
-    .skylabs-title img{
+    /* .skylabs-title img{
         height: 1060px;
         width: 100%;
         object-fit: cover;
-    }
-    .count-wrap {
+    } */
+    /* .count-wrap {
     padding-top: 0px !important;
-}
+} */
 }
 
 
 
         @media(max-width:767px) and (min-width:426px) {
-         .count-wrap {
+         /* .count-wrap {
    padding-top: 0px !important;
-}
+} */
             .crowsel-container {
     height: 400px !important;
 }
@@ -3407,11 +3419,11 @@ body{
     .ms-vsn{
     margin-top:0px;
 }
-.skylabs-title img{
+/* .skylabs-title img{
            height: 1060px;
         width: 100%;
         object-fit: cover;
-}
+} */
             .communicatioin-title h4 {
               font-size: 15px;
 }
@@ -3448,9 +3460,9 @@ body{
     .form-action .form-mtehod{
         width:100%;
     }
-    .count-wrap{
+    /* .count-wrap{
         flex-direction:column;
-    }
+    } */
      .counter-title {
    width: inherit !important;
     }
@@ -3683,12 +3695,12 @@ body{
             left: 30px;
 
         }
-        .skylabs-title img{
+        /* .skylabs-title img{
         height: 1060px;
         width: 100%;
         object-fit: cover;
 
-        }
+        } */
         .communicatioin-title h2 {
             font-size: 18px;
         }
@@ -4008,8 +4020,9 @@ span.avtr figure {background-color: #ccc;background-position: center;background-
 }
 .agree-img img{
     width:100%;
-       height: 250px;
+       /* height: 250px; */
     object-fit: cover;
+     border-radius: 10px;
 }
 .new-abstraction p{
     font-size:14px;
@@ -4263,7 +4276,7 @@ color:#fff;
     background: #fff;
     padding: 50px 0px;
     border: 10px solid #ccc;
-    height:360px;
+    height:360px !important;
 }
 .swiper-text p{
     background: #1C4062;
@@ -4279,11 +4292,11 @@ color:#fff;
 }
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     content: 'prev';
-      font-size: 20px;
+      font-size: 20px !important;
 }
 
 /*faq*/
@@ -4392,7 +4405,7 @@ color:#fff;
       .services-card {
       position: relative;
       text-align: center;
-      padding: 30px;
+      padding: 18px;
     }
 
     .card-icon img {
@@ -4629,3 +4642,82 @@ box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.9);
     grid-template-columns: repeat(6, 1fr); /* Extra large desktops */
   }
 }
+
+
+.event-details a{
+    text-decoration: none;
+}
+.zbtic-text h3 {
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.invest-bussiness-heading p {
+    text-align: justify;
+}
+
+.about-text {
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+}
+.about-body {
+    position: relative;
+}
+.navbar a, .navbar a:focus {
+    color: inherit !important;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    #counter .item .count {
+        font-size: 20px !important;
+    }
+    .count-wrap {
+        padding-top: 150px;
+    }
+        .counter-title {
+        height: auto !important;
+    }
+        #counter .item .count {
+        font-size: 20px !important;
+    }
+     
+}
+
+
+@media (max-width: 767px) and (min-width: 426px) {
+    .absolute-define {
+        height: auto !important;
+        background-size: contain !important;
+        position: inherit;
+    }
+     .count-wrap {
+        flex-direction: column;
+    }
+  
+    .counter-title {
+        width: inherit !important;
+        background: linear-gradient(121.94deg, #1C4062 3.3%, #3283A0 77.96%);
+    }
+    .count-wrap{
+        padding-top: 0px !important;
+    }
+    }
+@media (max-width: 425px) {
+    .absolute-define {
+        height: auto !important;
+        background-size: contain !important;
+        position: inherit;
+    }
+        .counter-title {
+        width: inherit !important;
+        background: linear-gradient(121.94deg, #1C4062 3.3%, #3283A0 77.96%);
+    }
+        .count-wrap {
+        padding-top: 0px !important;
+    }
+}
+   
+
+

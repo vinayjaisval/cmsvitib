@@ -57,7 +57,7 @@ if ($SliderBanner->$file_var != "") {
           <div class=" d-flex gap-4 justify-content-center count-wrap" id="counter">
             <div class="counter-title item text-center text-white">
 
-              <span class="counter count" data-number="5000">5000</span>
+              <span class="counter count" data-number="5000">3000</span>
               <p>employés</p>
             </div>
             <div class="counter-title item text-center text-white">
