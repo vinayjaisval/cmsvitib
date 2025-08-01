@@ -1,0 +1,20 @@
+* text=auto eol=lf
+<<<<<<< HEAD
+=======
+
+>>>>>>> 365d8d29636f4dac0ae4ba6e9a6670b7d621a2da
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+<<<<<<< HEAD
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
+=======
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
+>>>>>>> 365d8d29636f4dac0ae4ba6e9a6670b7d621a2da
