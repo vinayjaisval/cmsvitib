@@ -16,7 +16,7 @@
         </div>
     </div>
 </section>
-<section>
+<!-- <section>
     <div class="sip-title mt-3" id="sip-title">
         <div class="container">
             <div class="sip-meet-person">
@@ -32,6 +32,43 @@
             </div>
         </div>
     </div>
+</section> -->
+ <section>
+  <div class="sip-title mt-3" id="sip-title">
+    <div class="container">
+      <div class="sip-meet-person">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+                <div class="swiper-slide">
+              <img src="./img/event3.jpg" alt="image" width="100%" height="auto">
+            </div>
+              <div class="swiper-slide">
+              <img src="./img/image2.png" alt="image" width="100%" height="auto">
+            </div>
+           <div class="swiper-slide">
+              <img src="./img/event.jpg" alt="image" width="100%" height="auto">
+            </div>
+              
+            <div class="swiper-slide">
+              <img src="./img/img0.png" alt="image" width="100%" height="auto">
+            </div>
+          
+            <div class="swiper-slide">
+              <img src="./img/image.png" alt="image" width="100%" height="auto">
+            </div>
+             <div class="swiper-slide">
+              <img src="./img/image1.png" alt="image" width="100%" height="auto">
+            </div>
+            <!-- Add more slides if needed -->
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
