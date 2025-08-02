@@ -57,29 +57,29 @@ if ($SliderBanner->$file_var != "") {
           <div class=" d-flex gap-4 justify-content-center count-wrap" id="counter">
             <div class="counter-title item text-center text-white">
 
-              <span class="counter count" data-number="5000">3000</span>
+              <span class="counter count" data-number="3000">3000</span>
               <p>employés</p>
             </div>
             <div class="counter-title item text-center text-white">
 
-              <span class="counter count" data-number="90">90</span>
+              <span class="counter count" data-number="100">100</span>
               <p>Entreprises</p>
             </div>
             <div class="counter-title item text-center text-white">
 
               <span class="counter count" data-number="624">624</span>
-              <p>hectares de terrain</p>
+              <p>Hectares</p>
             </div>
             <div class="counter-title item text-center text-white">
 
               <span class="counter count percentage" data-percentage="37">37%</span>
-              <p>de terrain disponible</p>
+              <p>De terrain disponible</p>
             </div>
             <div class="counter-title item text-center text-white">
               <div class="d-flex justify-content-center gap-2 align-items-center">
                 <span class="counter count" data-number="16000">16000</span><span>m<sup>2</sup></span>
               </div>
-              <p>2 De Bureaux</p>
+              <p>De Bureaux</p>
             </div>
           </div>
         </div>
@@ -87,6 +87,37 @@ if ($SliderBanner->$file_var != "") {
     </div>
   </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".count");
+
+  counters.forEach(counter => {
+    const isPercentage = counter.classList.contains("percentage");
+    const target = isPercentage
+      ? parseInt(counter.dataset.percentage)
+      : parseInt(counter.dataset.number);
+
+    let count = 0;
+    const duration = 9000; // total animation time in ms
+    const frameRate = 60; // how many updates
+    const intervalTime = duration / frameRate;
+    const increment = target / frameRate;
+
+    const updateCounter = () => {
+      count += increment;
+      if (count >= target) {
+        count = target;
+        counter.textContent = isPercentage ? `${Math.round(count)}%` : Math.round(count);
+        clearInterval(timer);
+      } else {
+        counter.textContent = isPercentage ? `${Math.round(count)}%` : Math.round(count);
+      }
+    };
+
+    const timer = setInterval(updateCounter, intervalTime);
+  });
+});
+</script>
 @php($i++)
 @endforeach
 @endif

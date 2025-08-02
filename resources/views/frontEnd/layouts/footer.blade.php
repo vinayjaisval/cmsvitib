@@ -98,9 +98,44 @@
             </div>
         </div>
     </div>
-
+<div class="whatsupp">
+            <div class="whats-chat">
+                <a href="https://wa.me/+2250778343202">
+                    <img src="./assets/img/WhatsApp.svg 1.png"></a> 
+            </div>
+        </div>
     
     <div class="footer-bottom container-fluid text-center text-white py-3">
         <p>© VITIB 2025 | Tous droits réservés. Design par Skylabs Solution India Pvt. Ltd.</p>
     </div>
 </footer>
+ <div class="scroll-top position-fixed bottom-0 end-0 m-3" id="scroll-top">
+        <button class="btn text-white rounded-circle"><i class="fas fa-arrow-up"></i></button>
+    </div>
+ <!-- <script
+    src="https://skybot.skylabsapp.com/script.js"
+    data-bot-id="f2d5a212-be3c-405d-bf18-ece411d39845"
+    data-api_key="skybot"
+    data-chat-service="skybot"
+    data-chat-width="450px"
+    data-chat-height="600px"
+    data-cust-id = "1"
+    data-cust-name = "Vitib"
+    type="text/javascript"
+  ></script> -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('.scroll-top').addClass('visible');
+                } else {
+                    $('.scroll-top').removeClass('visible');
+                }
+            });
+
+            $('.scroll-top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
