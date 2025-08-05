@@ -1558,7 +1558,7 @@ body{
 
     .sponsers-title {
         text-align: center;
-        padding: 100px 0px;
+        padding: 25px 0px;
     }
 
     .paltinum-meet {
@@ -1873,10 +1873,23 @@ body{
 }
 }
 
+
+
+@media(max-width:1199px) and (min-width:992px){
+.count-wrap {
+    padding-top: 200px !important;
+}
+}
+
 @media(max-width:1024px) and (min-width:992px){
     .services-card {
     background: #fff;
     padding: 40px 28px;
+}
+}
+@media(max-width:1002px) and (min-width:992px){
+.header-dropdown .btn {
+    margin-left: 5px;
 }
 }
 
@@ -2418,7 +2431,7 @@ body{
                 height: 40px;
                 border-radius: 5px;
                 /* border: none; */
-                margin: 10px 5px;
+                /* margin: 10px 5px; */
             }
 
             .form-action form textarea {
