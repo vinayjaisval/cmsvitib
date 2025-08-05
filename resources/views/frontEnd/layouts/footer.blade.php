@@ -1,19 +1,10 @@
-<footer class="footer mb-0 mt-4" id="footer">
-
-    <div class="whatsupp">
-        <div class="whats-chat">
-            <a href="https://wa.me/+2250778343202">
-                <img src="{{ asset('public/assets/assets/image/ww1.png')}}"></a>
+<footer class="footer mb-0 mt-4" id="footer" style="background-color:rgb(213, 243, 248);">
+  
+    <div class="container">
+        <div class="fotter-logo d-flex justify-content-start">
+            <img src="{{ asset('public/assets/assets/image/logo/logo.png') }}" alt="VITIB Logo" class="footer-logo">
         </div>
     </div>
-    <footer class="footer mb-0 mt-4" id="footer" style="background-color:rgb(213, 243, 248);">
-
-
-        <div class="container">
-            <div class="fotter-logo d-flex justify-content-start">
-                <img src="{{ asset('public/assets/assets/image/logo/logo.png') }}" alt="VITIB Logo" class="footer-logo">
-            </div>
-        </div>
 
         <div class="container mt-4">
             <div class="footer-grid gap-4">
@@ -89,45 +80,31 @@
                             <a href="{{Helper::GeneralSiteSettings('social_link2')}}"><img src="{{ asset('public/assets/assets/image/Vector (1).png') }}" alt="Twitter"></a>
                             @endif
 
-
+                        @if(Helper::GeneralSiteSettings('social_link4'))
+                            <a href="{{Helper::GeneralSiteSettings('social_link4')}}"><img src="{{ asset('public/assets/assets/image/imgase-i.png') }}" alt="LinkedIn"></a>
+                        @endif
 
                             @if(Helper::GeneralSiteSettings('social_link5'))
                             <a href="{{Helper::GeneralSiteSettings('social_link5')}}"><img src="{{ asset('public/assets/assets/image/youtube 1.png') }}" alt="YouTube"></a>
-                            @endif
-                            @if(Helper::GeneralSiteSettings('social_link4'))
-                            <a href="{{Helper::GeneralSiteSettings('social_link4')}}"><img src="{{ asset('public/assets/assets/image/tw.png') }}" alt="LinkedIn"></a>
-                            @endif
-                        </div>
-                        <div class="nous-point mt-3">
-                            <ul>
-                                <li><a href="#">Newsletter</a></li>
-                            </ul>
-                        </div>
+                        @endif
                     </div>
-                    <br>
-                    <p>Newsletter</p>
-                    <form class="newsletter-form mt-4">
-                        <input type="email" class="newsletter-input" placeholder="info@vitib.ci">
-                        <button type="submit" class="newsletter-btn">S'abonner</button>
-                    </form>
                 </div>
-            </div>
-        </div>
-        <div class="whatsupp">
-            <div class="whats-chat">
-                <a href="https://wa.me/+2250778343202">
-                    <img src="./assets/img/WhatsApp.svg 1.png"></a>
-            </div>
-        </div>
 
-        <div class="footer-bottom container-fluid text-center text-white py-3">
-            <p>© VITIB 2025 | Tous droits réservés. Design par Skylabs Solution India Pvt. Ltd.</p>
+                <form class="newsletter-form mt-4">
+                    <input type="email" class="newsletter-input" placeholder="info@vitib.ci">
+                    <button type="submit" class="newsletter-btn">S'abonner</button>
+                </form>
+            </div>
         </div>
-    </footer>
-    <div class="scroll-top position-fixed bottom-0 end-0 m-3" id="scroll-top">
-        <button class="btn text-white rounded-circle"><i class="fas fa-arrow-up"></i></button>
     </div>
-    <script
+
+    
+    <div class="footer-bottom container-fluid text-center text-white py-3">
+        <p>© VITIB 2025 | Tous droits réservés. Design par Skylabs Solution India Pvt. Ltd.</p>
+    </div>
+</footer>
+
+ <script
         src="https://skybot.skylabsapp.com/script.js"
         data-bot-id="f2d5a212-be3c-405d-bf18-ece411d39845"
         data-api_key="skybot"
