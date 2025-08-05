@@ -125,7 +125,7 @@ $cartds = App\Models\Topic::where(['webmaster_id'=> 33,'status'=>1])->whereIn('r
             @endforeach -->
             <section id="content">
 
-                <div class="container topic-page">
+                <div class=" topic-page">
                     <div class="row">
                         @if($Categories->count() >1)
                         @include('frontEnd.layouts.side')
