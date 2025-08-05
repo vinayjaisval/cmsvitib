@@ -1,4 +1,4 @@
-<footer class="footer mb-0 mt-4" id="footer" style="background-color:rgb(213, 243, 248);">
+<footer class="footer mb-0 mt-4" id="footer">
   
     <div class="container">
         <div class="fotter-logo d-flex justify-content-start">
@@ -89,6 +89,11 @@
                             <a href="{{Helper::GeneralSiteSettings('social_link5')}}"><img src="{{ asset('public/assets/assets/image/youtube 1.png') }}" alt="YouTube"></a>
                         @endif
                     </div>
+                    <div class="nous-point mt-3">
+                        <ul>
+                             <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <form class="newsletter-form mt-4">
@@ -112,7 +117,7 @@
  <div class="scroll-top position-fixed bottom-0 end-0 m-3" id="scroll-top">
         <button class="btn text-white rounded-circle"><i class="fas fa-arrow-up"></i></button>
     </div>
- <!-- <script
+ <script
     src="https://skybot.skylabsapp.com/script.js"
     data-bot-id="f2d5a212-be3c-405d-bf18-ece411d39845"
     data-api_key="skybot"
@@ -122,7 +127,7 @@
     data-cust-id = "1"
     data-cust-name = "Vitib"
     type="text/javascript"
-  ></script> -->
+  ></script>
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
