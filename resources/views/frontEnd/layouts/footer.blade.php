@@ -88,9 +88,14 @@
                             <a href="{{Helper::GeneralSiteSettings('social_link5')}}"><img src="{{ asset('public/assets/assets/image/youtube 1.png') }}" alt="YouTube"></a>
                         @endif
                     </div>
+                    <div class="nous-point mt-3">
+                        <ul>
+                             <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <form class="newsletter-form mt-4">
+                <form class="newsletter-form ">
                     <input type="email" class="newsletter-input" placeholder="info@vitib.ci">
                     <button type="submit" class="newsletter-btn">S'abonner</button>
                 </form>
