@@ -14,7 +14,7 @@
                        <p  class="cp-text">{!! $items->{"details_$language_code"} ?? '' !!}</p>
                     </div>
                      <div class="plus-title mt-4">
-                 <a href="{{ url('form') }}">
+                 <a href="{{url('contact_us')}}">
                 <button class="bg-white border-0 mb-2 shadow py-2 px-3 rounded text-uppercase fw-bold">Souscrire à l’offre</button></a>
             </div>
                 </div>

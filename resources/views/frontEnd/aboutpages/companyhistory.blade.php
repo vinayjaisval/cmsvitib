@@ -2,8 +2,8 @@
     $language_code = \Helper::currentLanguage()->code;
     $cartds  = App\Models\Topic::where(['webmaster_id'=> 29,'status'=>1])->whereIn('row_no', [3])->first();
   
-@endphp
-<section>
+        @endphp
+        <section>
         <div class="about-us-second mt-4" id="about-us-second">
             <div class="container">
                 <div class="row">
@@ -24,24 +24,25 @@
             </div>
         </div>
     </section> -->
-
+@php
+$language_code = \Helper::currentLanguage()->code;
+$data = App\Models\Topic::where(['webmaster_id' => 23, 'row_no' => 2, 'status' => 1])->first();
+@endphp
 <section>
     <div class="about-us-second mt-5" id="about-us-second">
         <div class="container">
             <div class="row">
-               
+
                 <div class="col-lg-6">
                     <div class="text-second">
                         <h1 class="heading-text fw-bold text-uppercase">
-                            notre Histoire
+                            {{ $data->{"title_$language_code"} }}
                         </h1>
-                        <p class="font-weight-normal">Notre histoire est de faire de la ZBTIC non seulement le hub africain de la biotechnologie et des technologies de l’information mais aussi un gisement d’emplois qualifiés pour la jeunesse ivoirienne en particulier et celle de l’Afrique en général.</p>
-                        <p class="font-weight-normal">La vision clairement affichée de l’État est de faire du Parc Technologique de Grand- Bassam (Côte d’Ivoire), la vitrine technologique de la sous-région ouest- africaine, le premier dédié aux TIC et à la Biotechnologie.
-                        </p>
-                        <p class="font-weight-normal">Avec cette initiative, s’ouvre aux futures entreprises utilisatrices, un vaste marché régional, notamment les marchés de l’Afrique et de l’espace francophone.
-                            Grâce à la politique d’ouverture du gouvernement ivoirien, et profitant de la croissance soutenue de l’économie ivoirienne boostée par le dynamisme du secteur des TIC en Côte d’Ivoire, tout investisseur qui s’installe au VITIB s’offre de belles perspectives de croissance tant sur le marché africain qu’à l’international.</p>
+                        <p class="font-weight-normal"> {!! $data->{"details_$language_code"} !!}</p>
+
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="sip-title mt-3" id="sip-title">
                         <div class="sip-meet-person">
@@ -80,7 +81,7 @@
                                                 <p>Loi instituant le régime de la zone franche de la Biotechnologie, des technologies de l’information et de la Communication</p>
                                             </div>
                                         </div>
-                                    
+
                                     </div>
                                     <div class="swiper-slide slide-wrapper-border" role="group" aria-label="2 / 16" style="width: 263px; margin-right: 20px;" data-swiper-slide-index="1">
                                         <div class="swiper-title">

@@ -2,7 +2,11 @@
     $language_code = \Helper::currentLanguage()->code;
     $heading  = App\Models\Topic::where(['webmaster_id'=> 29,'status'=>1,'row_no'=>6])->first();
     $cartds  = App\Models\Topic::where(['webmaster_id'=> 29,'status'=>1])->whereIn('row_no', [7,8,9,10])->get();
+
 @endphp
+
+
+
 <section>
     <div class="explotion-title mt-5" id="explotion-head">
         <h2 class="métiers text-center text-white text-uppercase"> {{ $heading->{"title_$language_code"} ?? '' }}</h2>

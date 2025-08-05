@@ -1,3 +1,9 @@
+
+
+@php
+$language_code = \Helper::currentLanguage()->code;
+$data = App\Models\Topic::where(['webmaster_id' => 23, 'row_no' => 2, 'status' => 1])->first();
+@endphp
 <section>
     <div class="zbtic-title mt-5">
         <div class="maitriz-title">
