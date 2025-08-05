@@ -55,7 +55,7 @@ $cartds = App\Models\Topic::where(['webmaster_id'=> 27,'status'=>1])->get();
           </div>
 
 
-          @endforeach
+          @endforeach     
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
