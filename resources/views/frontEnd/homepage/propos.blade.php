@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-</section>  -->
+</section>-->
 <section>
         <div class="proposal-title mt-5" id="proposal-title">
             <div class="container">

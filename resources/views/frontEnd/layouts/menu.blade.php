@@ -31,7 +31,8 @@ $MenuLinks = \App\Helpers\SiteMenu::List(Helper::GeneralWebmasterSettings("heade
                 @endforeach
                 @if($key == (count($MenuLinks)-1))
                  <li class="nav-item mx-2">
-                    <a href="{{ @$MenuLink->url }}" target="{{ @$MenuLink->target }}" class="register-btn">{!! (@$MenuLink->icon)?"<i class='".@$MenuLink->icon."'></i> ":"" !!} {{ @$MenuLink->title }}</a>
+                    <a href="{{ @$MenuLink->url }}" target="{{ @$MenuLink->target }}" class="register-btn">{!! (@$MenuLink->icon)?"<i class='".@$MenuLink->icon."'></i> ":"" !!} Inscrivez-vous
+                    </a>
                  </li>
                 @endif
 

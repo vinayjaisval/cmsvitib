@@ -1,3 +1,10 @@
+
+<div class="whatsupp">
+            <div class="whats-chat">
+                <a href="https://wa.me/+2250778343202">
+                    <img src="{{ asset('public/assets/assets/image/ww1.png')}}"></a> 
+            </div>
+        </div>
 <footer class="footer mb-0 mt-4" id="footer" style="background-color:rgb(213, 243, 248);">
   
     <div class="container">
@@ -81,16 +88,18 @@
                             <a href="{{Helper::GeneralSiteSettings('social_link2')}}"><img src="{{ asset('public/assets/assets/image/Vector (1).png') }}" alt="Twitter"></a>
                         @endif
 
-                        @if(Helper::GeneralSiteSettings('social_link4'))
-                            <a href="{{Helper::GeneralSiteSettings('social_link4')}}"><img src="{{ asset('public/assets/assets/image/imgase-i.png') }}" alt="LinkedIn"></a>
-                        @endif
+                       
 
                         @if(Helper::GeneralSiteSettings('social_link5'))
                             <a href="{{Helper::GeneralSiteSettings('social_link5')}}"><img src="{{ asset('public/assets/assets/image/youtube 1.png') }}" alt="YouTube"></a>
                         @endif
+                        @if(Helper::GeneralSiteSettings('social_link4'))
+                            <a href="{{Helper::GeneralSiteSettings('social_link4')}}"><img src="{{ asset('public/assets/assets/image/tw.png') }}" alt="LinkedIn"></a>
+                        @endif
                     </div>
                 </div>
-
+                <br>
+                <p>Newsletter</p>
                 <form class="newsletter-form mt-4">
                     <input type="email" class="newsletter-input" placeholder="info@vitib.ci">
                     <button type="submit" class="newsletter-btn">S'abonner</button>
