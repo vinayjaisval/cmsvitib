@@ -1357,12 +1357,12 @@ body{
      }
 
      /* -------------------------------------------------about-us------------------------------------------- */
-     .about-text {
+     /* .about-text {
         position: absolute;
         top: 120px;
         left: 116px;
         color: #fff;
-     }
+     } */
 
 
        /* ----------------------------------------------- CONTACT US PAGE--------------------------------- */
@@ -1683,12 +1683,12 @@ body{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .partner-image img {
+    /* .partner-image img {
         width: 100%;
         height: 100%;
         border-radius: 2px;
         object-fit: cover;
-    }
+    } */
 
     @keyframes scrollLeft {
         0% {
@@ -1977,7 +1977,7 @@ body{
 
         .form-action form input {
             width: 100%;
-            margin: 10px 5px;
+            /* margin: 10px 5px; */
         }
 
             .circle-title, .main-explotion-title, .blog-head{
@@ -2394,12 +2394,15 @@ body{
 
 
         @media(max-width:425px) {
-        .count-wrap {
-   padding-top: 0px !important;
+            .sponsers-title{
+                overflow-x:hidden ;
+            }
+           .count-wrap {
+               padding-top: 0px !important;
 }
                    .invest-title .invest-bussinesss img{
-            width:100%;
-            height:auto;
+               width:100%;
+               height:auto;
         }
             .communicatioin-title h4 {
               font-size: 15px;
@@ -2625,6 +2628,9 @@ body{
 }
 .slider-bg-blue .swiper-slide{
     width:400px !important;
+}
+#content{
+    overflow-x: hidden;
 }
 }
 
