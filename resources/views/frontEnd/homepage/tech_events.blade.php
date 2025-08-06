@@ -2,7 +2,7 @@
 $language_code = \Helper::currentLanguage()->code;
 $heading = App\Models\Topic::where(['webmaster_id' =>20, 'row_no' => 5, 'status' => 1])->first();
 // dd($heading);
-$data = App\Models\Topic::where(['webmaster_id' =>20, 'status' => 1])->whereIn('row_no',['1','2','3','4'])->orderBy('id','DESC')->get();
+$data = App\Models\Topic::where(['webmaster_id' =>20, 'status' => 1])->orderBy('id','DESC')->get();
 @endphp
 
 <section>
@@ -41,9 +41,7 @@ $data = App\Models\Topic::where(['webmaster_id' =>20, 'status' => 1])->whereIn('
             <div class="swiper-slide">
               <img src="{{asset('public/uploads/topics/' . $dataItem->photo_file)}}" alt="image" width="100%" height="auto">
             </div>
-            <div class="swiper-slide">
-              <img src="{{asset('public/uploads/topics/' . $dataItem->photo_file)}}" alt="image" width="100%" height="auto">
-            </div>
+            
             @endforeach
 
           </div>

@@ -12,9 +12,9 @@
             </div>
             <div class="production-title d-flex gap-3 justify-content-center">
                 @foreach($cartds as $items)
-                    <div class="production-gif d-flex align-items-center rounded gap-3 active">
+                    <div class="production-gif d-flex align-items-center rounded gap-3 {{ $loop->first ? 'active' : 'inactive' }}">
                         <img src="{{ asset('public/uploads/topics/' . $items->photo_file) }}">
-                        <p class="active">{{ $items->{"title_$language_code"} }}</p>
+                        <p class="{{ $loop->first ? 'active' : 'inactive' }}">{{ $items->{"title_$language_code"} }}</p>
                         <i class='fas fa-long-arrow-alt-right'></i>
                     </div>
                 @endforeach
