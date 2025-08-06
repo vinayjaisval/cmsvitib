@@ -47,8 +47,8 @@ $data = App\Models\Topic::where(['webmaster_id' =>20, 'status' => 1])->orderBy('
           </div>
 
           <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next btn-next-slider"></div>
+          <div class="swiper-button-prev btn-next-slider"></div>
         </div>
       </div>
     </div>
