@@ -25,14 +25,9 @@
                         <div class="popup-overlay" id="popup1">
                               <div class="popup">
                                 <span class="close-icon">&times;</span>
-                                <p>Le bénéfice du régime de la ZBTIC est soumis à l’obtention d’un agrément délivré par l’EPE (VITIB S.A). 
-                                                    Les sociétés désireuses de s’implanter sur la zone franche en qualité d’Entreprises Utilisatrices doivent opérer dans
-                                                    les domaines d’activités suivants</p>
-                                <ul>
-                                  <li>Biotechnologie</li>
-                                  <li>Technologies de l’Information et de la Communication</li>
-                                  <li>Banques et Établissements financiers d’appui aux investissements réalisés dans la Zone Franche</li>
-                                </ul>
+                                <p>{{ strip_tags($items->{"details_$language_code"} ?? '') }}
+                                </p>
+                               
                               </div>
                             </div>
                         @endforeach
