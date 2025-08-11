@@ -1,7 +1,17 @@
 
 <footer class="footer mb-0 mt-4" id="footer" style="background-color:rgb(213, 243, 248);">
+<<<<<<< HEAD
 
 
+=======
+
+    <div class="container">
+        <div class="fotter-logo d-flex justify-content-start">
+            <img src="{{ asset('public/assets/assets/image/logo/logo.png') }}" alt="VITIB Logo" class="footer-logo">
+        </div>
+    </div>
+
+>>>>>>> f6b43ed8643f31c1c4bd4f69edec17887ff42d46
     <div class="container mt-4">
         <div class="footer-grid gap-4">
             <!-- Contact Info -->
@@ -98,13 +108,28 @@
             </div>
         </div>
     </div>
+    <div class="whatsupp">
+        <div class="whats-chat">
+            <a href="https://wa.me/+2250778343202">
+                <img src="./assets/image/logo/WhatsApp.svg 1.png"></a>
+        </div>
+    </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f6b43ed8643f31c1c4bd4f69edec17887ff42d46
     <div class="footer-bottom container-fluid text-center text-white py-3">
         <p>© VITIB 2025 | Tous droits réservés. Design par Skylabs Solution India Pvt. Ltd.</p>
     </div>
+    <div class="scroll-top position-fixed bottom-0 end-0 m-3" id="scroll-top">
+        <button class="btn text-white rounded-circle"><i class="fas fa-arrow-up"></i></button>
+    </div>
 </footer>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f6b43ed8643f31c1c4bd4f69edec17887ff42d46
 <script
     src="https://skybot.skylabsapp.com/script.js"
     data-bot-id="f2d5a212-be3c-405d-bf18-ece411d39845"

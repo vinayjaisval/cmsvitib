@@ -350,6 +350,15 @@ body{
 }
 
 @media (max-width: 991px) {
+      
+     #cookies-accept-btn{
+         white-space: nowrap;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .cookies-accept p{
+		font-size:12px ;
+	}
      .popup-content{
     overflow-y: scroll;
     height: 300px;
@@ -1882,6 +1891,11 @@ body{
 .count-wrap {
     padding-top: 200px !important;
 }
+  #cookies-accept-btn{
+         white-space: nowrap;
+        margin-right: 10px;
+        font-size: 12px;
+    }
 }
 
 @media(max-width:1024px) and (min-width:992px){
@@ -3518,6 +3532,7 @@ box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.9);
     }
     }
 @media (max-width: 425px) {
+   
     .absolute-define {
         height: auto !important;
         background-size: contain !important;
@@ -3550,4 +3565,9 @@ box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.9);
     position: absolute;
     top: var(--swiper-navigation-top-offset, 50%) !important;
     
+}
+
+/* ----------------------------------------cookies--------------------------- */
+#cookies-accept-btn{
+    background:#317F9C;
 }
